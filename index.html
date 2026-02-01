@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+SOY CHAMP
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Champ Snacks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primario: #000000;
+      --secundario: #ffd700;
+      --oscuro: #222;
+      --claro: #fff;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin:0; padding:0;
+      background: var(--claro);
+      color: var(--oscuro);
+    }
+
+    header {
+      background: var(--primario);
+      padding:20px;
+      text-align:center;
+      color: var(--claro);
+    }
+    header img.logo {
+      max-width:150px;
+      margin-bottom:10px;
+    }
+    header h1 {
+      margin:0;
+      font-size:2em;
+      font-weight:700;
+    }
+    header p {
+      font-size:1em;
+      font-style:italic;
+    }
+
+    nav {
+      background: var(--oscuro);
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    nav a {
+      color: var(--claro);
+      text-decoration:none;
+      padding:10px 15px;
+      font-weight:600;
+    }
+    nav a:hover {
+      background: var(--primario);
+    }
+
+    section {
+      padding:30px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
+    section h2 {
+      color: var(--primario);
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    #historia p {
+      font-size:1.1em;
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .productos {
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .producto {
+      flex:1 1 250px;
+      border:2px solid var(--secundario);
+      padding:15px;
+      border-radius:10px;
+      text-align:center;
+      background:#fff8e1;
+      transition: transform 0.3s;
+    }
+    .producto:hover {
+      transform: scale(1.05);
+    }
+    .producto img {
+      max-width:100%;
+      height:auto;
+      border-radius:8px;
+      margin-bottom:10px;
+    }
+    .producto h3 {
+      margin:10px 0;
+      color: var(--primario);
+    }
+
+    #motivacion p {
+      font-size:1.2em;
+      text-align:center;
+      font-weight:600;
+      color: var(--secundario);
+    }
+
+    footer {
+      background: var(--oscuro);
+      color: var(--claro);
+      text-align:center;
+      padding:15px;
+      font-size:0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size:1.8em; }
+      .productos { flex-direction:column; align-items:center; }
+      nav { flex-direction:column; }
+      nav a { padding:12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src = "champ-logo.jpeg" width="350" height="350">
+    <h1>Champ Snacks</h1>
+    <p>¡Sé el campeón de tu día!</p>
+  </header>
+
+  <nav>
+    <a href="#historia">Historia</a>
+    <a href="#productos">Productos</a>
+    <a href="#motivacion">Motivación</a>
+  </nav>
+
+  <section id="historia">
+    <h2>Nuestra Historia</h2>
+    <p>Champ nació con la misión de inspirar a cada persona a sentirse como un verdadero campeón. 
+       Desde Valencia, Venezuela, hemos creado una marca que combina sabor, energía y motivación.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="Chips.jpeg" alt="Champ Chips">
+        <h3>Champ Chips</h3>
+        <p>Crocantes y llenos de sabor, perfectos para cualquier momento.</p>
+      </div>
+      <div class="producto">
+        <img src="bars.jpeg" alt="Champ Bars">
+        <h3>Champ Bars</h3>
+        <p>Snacks energéticos que te acompañan en cada reto.</p>
+      </div>
+      <div class="producto">
+        <img src="mix.jpeg" alt="Champ Mix">
+        <h3>Champ Mix</h3>
+        <p>Una mezcla divertida y nutritiva que te impulsa hacia la victoria.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="motivacion">
+    <h2>Motivación</h2>
+    <p>"Con Champ, cada bocado te recuerda que eres capaz de ganar tus propias batallas."</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Champ Snacks. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
